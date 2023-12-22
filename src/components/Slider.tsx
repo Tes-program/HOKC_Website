@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef } from 'react';
 import { useSwipeable } from 'react-swipeable';
-import { slides } from '../constant/image';
+import { slides } from '../constant/image.tsx';
 
 export const Slider: React.FC = () => {
   const direction = useRef('normal');

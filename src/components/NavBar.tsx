@@ -1,13 +1,14 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { useState } from 'react';
+import logo from '../assets/logo.png';
 
 const NavBar: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   return (
     <nav className=" sm:flex py-2 md:px-4 md:pl-12 lg:pl-14 lg:px-6 sm:justify-between sm:items-center">
       <div className="flex items-center justify-between px-6 sm:p-0">
-        <img src="hokc.svg" alt="hokc_logo" width={45} height={45} />
+        <img src={logo} alt="hokc_logo" width={45} height={45} />
         <div className="sm:hidden">
           <button
             onClick={() => setIsMenuOpen(!isMenuOpen)}
