@@ -12,7 +12,8 @@ export default {
       },
       backgroundImage: {
         'hero-pattern': "url('/src/assets/image_overlay2.svg')",
-        'mobile-hero-pattern': "url('/src/assets/mobile_overlay.svg')"
+        'mobile-hero-pattern': "url('/src/assets/mobile_overlay.svg')",
+        'abstract-background': "url('/src/assets/abstract_background.png')"
       }
     },
   },
