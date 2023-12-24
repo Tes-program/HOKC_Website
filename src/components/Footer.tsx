@@ -17,12 +17,12 @@ const Footer: React.FC = () => {
           <div className=" relative p-3 ">
             <input
               type="text"
-              className=" border-2 font-Rubik-Bold font-extrabold md:text-[16px] border-black rounded-full md:w-96 sm:w-auto px-6 py-4"
+              className=" border-2 font-Rubik-Bold font-extrabold md:text-[16px] border-black rounded-full md:w-[384px] lg:w-96 sm:w-auto px-6 py-4"
               placeholder="Enter your mail"
             />
             <button
               className=" text-sm rounded-2xl mt-4 lg:m-0
-                md:absolute md:top-[10px] lg:top-[25px] lg:right-[28px] md:right-[185px] px-4 py-1 font-Rubik-Bold font-semibold bg-red-500 text-white w-[120px] h-8"
+                lg:absolute md:top-[10px] lg:top-[25px] lg:right-[28px] md:right-[247px] px-4 py-1 font-Rubik-Bold font-semibold bg-red-500 text-white w-[120px] h-8"
             >
               Subscribe
             </button>
