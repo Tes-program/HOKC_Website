@@ -6,7 +6,7 @@ import logo from '../assets/logo.png';
 const NavBar: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   return (
-    <nav className=" sm:flex py-2 md:px-4 md:pl-12 lg:pl-14 lg:px-6 sm:justify-between sm:items-center">
+    <nav className=" sm:flex py-2 md:px-4 sm:pl-12 lg:pl-14 lg:px-6 sm:justify-between sm:items-center">
       <div className="flex items-center justify-between px-6 sm:p-0">
         <img src={logo} alt="hokc_logo" width={45} height={45} />
         <div className="sm:hidden">
@@ -38,7 +38,7 @@ const NavBar: React.FC = () => {
       <div
         className={` pl-4 sm:flex sm:p-0 ${isMenuOpen ? 'block' : 'hidden'}`}
       >
-        <ul className="md:flex md:flex-grow gap-14 md:pr-14 md:text-base xl:text-lg">
+        <ul className="sm:flex sm:flex-grow gap-14 sm:pr-14 sm:text-base xl:text-lg">
           <li>
             <Link
               to="/"

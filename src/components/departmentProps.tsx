@@ -3,18 +3,22 @@ import { departments } from '../constant/department';
 
 export const Department: React.FC = () => {
   return (
-    <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mt-10">
+    <div className="grid grid-cols-1 py-10 gap-4 mt-10">
       {departments.map((department) => (
         <div
           key={department.id}
-          className="flex flex-col items-center justify-center"
+          className={`flex items-center justify-evenly pb-8 ${
+            department.id % 2 === 0 ? 'flex-row' : 'flex-row-reverse'
+          }`}
         >
           <img
-            className="w-20 h-20"
+            className=" h-32 sm:w-35 sm:h-40 md:w-64 md:h-52"
             src={department.image}
             alt={department.alt}
           />
-          <p className="text-sm font-Rubik-Regular">{department.department}</p>
+          <p className="text-sm md:text-lg font-Rubik-Regular font-bold">
+            {department.department}
+          </p>
         </div>
       ))}
     </div>
