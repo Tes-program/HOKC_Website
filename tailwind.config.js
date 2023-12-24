@@ -10,6 +10,10 @@ export default {
         'Rubik-Regular': ['Rubik-Regular', 'san-serif'],
         'Rubik-Light': ['Rubik-Light', 'san-serif'],
       },
+      backgroundImage: {
+        'hero-pattern': "url('/src/assets/image_overlay2.svg')",
+        'mobile-hero-pattern': "url('/src/assets/mobile_overlay.svg')"
+      }
     },
   },
   plugins: [],
