@@ -1,5 +1,5 @@
 import React from 'react';
-import { departments } from '../constant/department';
+// import { departments } from '../constant/department';
 
 export const Department: React.FC = () => {
   return (
@@ -18,6 +18,7 @@ export const Department: React.FC = () => {
     //     </div>
     //   ))}
     // </div>
+
     <></>
   );
 };
