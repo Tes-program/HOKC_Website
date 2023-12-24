@@ -42,9 +42,10 @@ export const Slider: React.FC = () => {
       clearInterval(interval);
     };
   });
+
   return (
     <div
-      className="flex h-[80vh] lg:h-[120vh] justify-center items-center overflow-hidden relative"
+      className="flex max-[375px]:h-[100vh] h-[80vh] md:h-[60vh] lg:h-[95vh] min-[1100px]:h-[140vh] max-[374px]:h-[90vh] justify-center items-center overflow-hidden relative"
       {...swipeHanlers}
     >
       {!!currentSlides.length &&
