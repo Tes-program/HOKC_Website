@@ -45,7 +45,7 @@ export const Slider: React.FC = () => {
 
   return (
     <div
-      className="flex max-[375px]:h-[115vh] h-[85vh] md:h-[60vh] lg:h-[70vh] min-[1100px]:h-[140vh] max-[374px]:h-[95vh] justify-center items-center overflow-hidden relative"
+      className="flex max-[375px]:h-[115vh] h-[85vh] md:h-[60vh] lg:h-[70vh] min-[1100px]:h-[145vh] max-[374px]:h-[95vh] justify-center items-center overflow-hidden relative"
       {...swipeHanlers}
     >
       {!!currentSlides.length &&
