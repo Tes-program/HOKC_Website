@@ -12,11 +12,11 @@ export const Department: React.FC = () => {
           }`}
         >
           <img
-            className=" h-32 sm:w-35 sm:h-40 md:w-64 md:h-52"
+            className=" h-32 sm:w-35 sm:h-40 md:w-96 md:h-64"
             src={department.image}
             alt={department.alt}
           />
-          <p className="text-sm md:text-lg font-Rubik-Regular font-bold">
+          <p className="text-sm md:text-2xl font-Rubik-Bold font-bold">
             {department.department}
           </p>
         </div>
