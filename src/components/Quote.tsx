@@ -19,7 +19,7 @@ export const Quote: React.FC = () => {
   }, []);
   return (
     <div className="bg-abstract-background w-full h-full">
-      {/* The div to contain the quote and display a new one every 20 secs */}
+      {/* The div to contain the quote and display a new one every 10 secs */}
       <div className="flex flex-col justify-center items-center h-[60vh] p-4">
         <h1 className="font-Rubik-Bold font-extrabold text-3xl pt-4 pb-2">
           Words of Wisdom

@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 const Footer: React.FC = () => {
   return (
-    <footer className="relative bg-neutral-100 text-center text-neutral-600  lg:text-left">
+    <footer className="relative bg-neutral-100 border-t border-black text-center text-neutral-600  lg:text-left">
       <div className=" p-9 ">
         <div className=" lg:flex justify-evenly">
           <div className=" ">

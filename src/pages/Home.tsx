@@ -6,6 +6,7 @@ import { Quote } from '../components/Quote';
 import { Mission } from '../components/Mission';
 import { Donation } from '../components/Donation';
 import { Bible } from '../components/Bible';
+import { Contact } from '../components/Contact';
 
 const Home: React.FC = () => {
   return (
@@ -17,6 +18,7 @@ const Home: React.FC = () => {
       <Mission />
       <Donation />
       <Bible />
+      <Contact bg_image={'abstract-background'} />
     </>
   );
 };
