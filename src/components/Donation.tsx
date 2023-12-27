@@ -26,7 +26,7 @@ export const Donation: React.FC = () => {
             alt="access_bank"
           />
           <p className="font-semibold text-2xl">0094476450</p>
-          <p className="text-center font-semibold text-xl">
+          <p className="text-center font-semibold text-[16px]">
             Access <br /> Diamond Bank
           </p>
         </div>

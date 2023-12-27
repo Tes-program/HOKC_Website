@@ -8,7 +8,7 @@
     "build": "tsc && vite build",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
-    "prepare": "husky install" 
+    "prepare": "husky install"
   },
   "husky": {
     "hooks": {
@@ -26,8 +26,11 @@
     ]
   },
   "dependencies": {
+    "axios": "^1.6.2",
+    "date-fns": "^3.0.6",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-js-cron": "^5.0.1",
     "react-router-dom": "^6.20.1",
     "react-swipeable": "^7.0.1"
   },
