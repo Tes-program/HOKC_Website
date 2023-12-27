@@ -103,8 +103,8 @@ export const getBibleVerse = async () => {
     // Get the text and reference from the data
     const reference: string = data.data.reference;
     const text: string = data.data.content[0].items
-      .filter((item: { type: string }) => item.type === 'text')
-      .map((item: { text: string }) => item.text)
+      .filter((item: { type?: string }) => item.type === 'text')
+      .map((item: { text?: string }) => item.text)
       .join('');
     text.trim();
     text.replace(/\s+/g, ' ');
