@@ -38,7 +38,7 @@ export const contacts: Contact[] = [
     name: 'Twitter',
     image:
       'https://res.cloudinary.com/dstmstsbe/image/upload/v1703711157/Group_67_1_ztbvga.png',
-    handle: 'hokcbabcock',
+    handle: '@hokcbabcock',
     link: 'https://twitter.com/hokcbabcock',
   },
   {
