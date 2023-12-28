@@ -22,7 +22,7 @@ const Footer: React.FC = () => {
             />
             <button
               className=" text-sm rounded-2xl mt-4 lg:m-0
-                md:absolute md:top-[10px] lg:top-[25px] lg:right-[28px] md:right-[195px] px-4 py-1 font-Rubik-Bold font-semibold bg-red-500 text-white w-[120px] h-8"
+                md:absolute md:top-[10px] lg:top-[25px] md:-translate-x-[135px] px-4 py-1 font-Rubik-Bold font-semibold bg-red-500 text-white w-[120px] h-8"
             >
               Subscribe
             </button>
