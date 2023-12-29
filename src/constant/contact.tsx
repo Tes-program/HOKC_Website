@@ -43,7 +43,7 @@ export const contacts: Contact[] = [
   },
   {
     id: 5,
-    name: 'GMail',
+    name: 'Gmail',
     image: mail,
     handle: 'info@hokc.bu',
     link: 'mailto:',

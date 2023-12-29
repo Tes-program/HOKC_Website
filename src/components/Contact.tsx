@@ -9,9 +9,9 @@ type Props = {
 
 export const Contact: React.FC<Props> = ({ bg_image }) => {
   return (
-    <div className="py-16">
+    <div className="">
       <div className={` bg-${bg_image} w-full h-full`}>
-        <div className="flex flex-col justify-center items-center py-4 md:py-20">
+        <div className="flex flex-col justify-center items-center py-4 md:pb-20">
           <div className="flex justify-center pt-10 md:py-16">
             <h1 className="font-Rubik-Bold font-extrabold md:text-4xl text-2xl text-[#BD1424]">
               Contact Us
@@ -31,10 +31,10 @@ export const Contact: React.FC<Props> = ({ bg_image }) => {
                   />
                 </a>
                 <div className="flex flex-col justify-center items-center">
-                  <h1 className="font-Rubik-Bold font-extrabold text-base">
+                  <h1 className="font-Rubik-Light font-light text-base">
                     {contact.name}
                   </h1>
-                  <div className="font-Rubik-Light font-light text-base">
+                  <div className="font-Rubik-Light text-center font-light text-base">
                     {contact.handle}
                   </div>
                 </div>

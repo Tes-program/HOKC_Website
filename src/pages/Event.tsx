@@ -40,9 +40,12 @@ const Event: React.FC = () => {
           />
         </Helmet>
       </HelmetProvider>
-      <div>
-        <h2>Event Page</h2>
-        {/* Add content specific to the Contact page */}
+      <div className="w-full h-full">
+        <div className="flex justify-center p-20 md:p-28">
+          <h1 className="text-xl md:text-3xl lg:text-4xl font-Rubik-Black font-extrabold">
+            No Upcoming Event...
+          </h1>
+        </div>
       </div>
     </>
   );

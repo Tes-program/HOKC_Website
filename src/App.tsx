@@ -4,7 +4,7 @@ import './App.css';
 import Home from './pages/Home';
 import About from './pages/About';
 import Event from './pages/Event';
-import Contact from './pages/Contact';
+import Contactpage from './pages/Contact';
 import Department from './pages/Department';
 
 const App: React.FC = () => {
@@ -13,7 +13,7 @@ const App: React.FC = () => {
       <Route path="/" element={<Home />} />
       <Route path="/about" element={<About />} />
       <Route path="/event" element={<Event />} />
-      <Route path="/contact" element={<Contact />} />
+      <Route path="/contact" element={<Contactpage />} />
       <Route path="/department" element={<Department />} />
     </Routes>
   );

@@ -1,12 +1,12 @@
 import React from 'react';
+import { Contact } from '../components/Contact';
 
-const Contact: React.FC = () => {
+const Contactpage: React.FC = () => {
   return (
-    <div>
-      <h2>Contact Page</h2>
-      {/* Add content specific to the About page */}
+    <div className="">
+      <Contact bg_image="abstract-background" />
     </div>
   );
 };
 
-export default Contact;
+export default Contactpage;
