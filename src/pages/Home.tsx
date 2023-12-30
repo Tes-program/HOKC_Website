@@ -24,7 +24,7 @@ const Home: React.FC = () => {
           <meta name="twitter:card" content="summary_large_image" />
           <meta
             name="twitter:image"
-            content="https://res.cloudinary.com/dstmstsbe/image/upload/v1703759860/Group_90_lqwy6j.png"
+            content="https://res.cloudinary.com/dstmstsbe/image/upload/c_thumb,w_200,g_face/v1703759860/Group_90_lqwy6j.png"
           />
           <meta name="twitter:title" content="Heirs of The Kingdom Chapel" />
           <meta name="twitter:creator" content="@hokcbabcock" />
@@ -41,7 +41,7 @@ const Home: React.FC = () => {
           />
           <meta
             property="og:image"
-            content="https://res.cloudinary.com/dstmstsbe/image/upload/v1703759860/Group_90_lqwy6j.png"
+            content="https://res.cloudinary.com/dstmstsbe/image/upload/c_thumb,w_200,g_face/v1703759860/Group_90_lqwy6j.png"
           />
         </Helmet>
       </HelmetProvider>

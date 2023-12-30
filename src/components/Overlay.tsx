@@ -5,7 +5,7 @@ import pink_logo from '../assets/pink_logo.png';
 
 export const Overlay: React.FC = () => {
   return (
-    <div className="absolute w-full object-cover h-[510px] -my-80 bg-hero-pattern flex items-center min-[2560px]:bg-repeat-x justify-center bg-no-repeat ">
+    <div className="absolute w-full object-cover h-[510px] -my-80 bg-hero-pattern flex items-center lg:bg-repeat-x justify-center bg-no-repeat ">
       <div className="flex flex-col justify-center items-center md:flex-row md:justify-between lg:gap-[200px] landscape:flex-row md:gap-[120px] gap-4 md:pt-0 pt-9">
         <div className="md:pb-8 text-center flex justify-center items-center flex-col">
           <img

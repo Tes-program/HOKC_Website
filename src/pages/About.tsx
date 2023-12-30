@@ -17,7 +17,7 @@ const About: React.FC = () => {
           <meta name="twitter:card" content="summary_large_image" />
           <meta
             name="twitter:image"
-            content="https://res.cloudinary.com/dstmstsbe/image/upload/v1703759860/Group_90_lqwy6j.png"
+            content="https://res.cloudinary.com/dstmstsbe/image/upload/c_thumb,w_200,g_face/v1703759860/Group_90_lqwy6j.png"
           />
           <meta
             name="twitter:title"
@@ -40,12 +40,12 @@ const About: React.FC = () => {
           />
           <meta
             property="og:image"
-            content="https://res.cloudinary.com/dstmstsbe/image/upload/v1703759860/Group_90_lqwy6j.png"
+            content="https://res.cloudinary.com/dstmstsbe/image/upload/c_thumb,w_200,g_face/v1703759860/Group_90_lqwy6j.png"
           />
         </Helmet>
       </HelmetProvider>
       <div className="w-full h-full">
-        <div className="bg-about-background4 lg:bg-about-background bg-no-repeat object-fill min-[1440px]:bg-about-background2 md:bg-about-background3">
+        <div className="bg-about-background4 lg:bg-about-background bg-no-repeat w-full h-full min-[1200px]:bg-about-background2 md:bg-about-background3">
           <h1 className="text-3xl font-Rubik-Bold font-bold text-white pt-[135px] text-center md:text-center md:pl-4 md:w-[315px] md:pt-64 lg:pt-[315px]">
             About Heir's of the Kingdom Chapel
           </h1>
