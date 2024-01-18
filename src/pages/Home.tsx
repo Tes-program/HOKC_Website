@@ -9,9 +9,19 @@ import { Mission } from '../components/Mission';
 import { Donation } from '../components/Donation';
 import { Bible } from '../components/Bible';
 import { Contact } from '../components/Contact';
+import { InformationModal } from '../components/InformationModal';
+import { useState } from 'react';
 
 // @hokcbabcock
 const Home: React.FC = () => {
+  const [isModalOpen, setModalOpen] = useState(true);
+  const handleCloseModal = () => {
+    setModalOpen(false);
+  };
+  // const handleOpenModal = () => {
+  //   setModalOpen(true);
+  // };
+
   return (
     <>
       <HelmetProvider>
@@ -53,6 +63,12 @@ const Home: React.FC = () => {
       <Donation />
       <Bible />
       <Contact bg_image={'abstract-background'} />
+      <InformationModal
+        isOpen={isModalOpen}
+        onClose={handleCloseModal}
+        title="Attendance System Update"
+        message="Our QR Scanner is undergoing maintenance. Apologies for any inconvenience. Please check back later. Thank you!"
+      />
     </>
   );
 };
