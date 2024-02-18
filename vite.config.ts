@@ -17,7 +17,7 @@ export default defineConfig({
         short_name: 'HOKC Web App',
         description:
           'The Offical Application for HOKC Members. Login and take your attendance, view your profile, and more!',
-        display: 'fullscreen',
+        display: 'standalone',
         screenshots: [
           {
             src: 'screenshot-390x844.png',
