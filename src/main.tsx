@@ -13,7 +13,7 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
     <Router>
       <div className=" w-full h-full">
-        <Navbar />
+        {isPwaMode ? null : <Navbar />}
         <App />
         {isPwaMode ? <MobileNav /> : <Footer />}
       </div>

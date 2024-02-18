@@ -4,7 +4,7 @@ import { mobileNavData } from '../constant/mobileNav';
 
 export const MobileNav: React.FC = () => {
   return (
-    <nav className="flex items-center text-center justify-around py-2">
+    <nav className="flex items-center text-center justify-around py-2 shadow-inner z-[100] fixed">
       <div className="flex">
         <ul className="grid grid-cols-4 gap-16 max-[375px]:gap-14 max-[320px]:gap-12">
           {mobileNavData.map((item, index) => (
