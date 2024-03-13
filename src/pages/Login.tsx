@@ -26,14 +26,16 @@ const Login: React.FC = () => {
   });
   const [form, setForm] = useState(fieldState);
   return (
-    <div className="flex items-center justify-center my-12">
-      <div className=" hidden ">
-        <img src={bible} alt="Bible Image" />
+    <div className="flex items-center justify-center lg:justify-normal my-12 lg:my-0 lg:flex-row lg:gap-9">
+      <div className=" hidden lg:flex ">
+        <img src={bible} alt="Bible Image" className="w-[467px]" />
       </div>
-      <div className="flex items-center flex-col">
+      <div className="flex items-center flex-col lg:m-8">
         <div className="flex flex-col items-center mb-8">
-          <img src={whitelogo} alt="church" className="w-16" />
-          <p className="text-[#434343]">Welcome, Sign in for worship.</p>
+          <img src={whitelogo} alt="church" className="w-16 lg:w-28" />
+          <p className="text-[#434343] lg:text-xl">
+            Welcome, Sign in for worship.
+          </p>
         </div>
         <div className="flex flex-col">
           <form>
@@ -73,7 +75,7 @@ const Login: React.FC = () => {
             <div className="flex justify-center">
               <p className="text-[#434343]">
                 Don't have an account?{' '}
-                <a href="#" className="text-[#434343]">
+                <a href="#" className="text-[#BD1424] font-semibold">
                   Sign Up
                 </a>
               </p>

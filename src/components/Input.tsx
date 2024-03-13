@@ -30,7 +30,7 @@ const Input: React.FC<InputProps> = ({
         placeholder={placeholder}
         required={required}
         onChange={onChange}
-        className="border-t-0 border-l-0 border-r-0 border-b-[1px] border-[#000000B2] p-1 w-72 focus:outline-none focus:border-gray-500 transition duration-500 ease-in-out text-[#000000B2]"
+        className="border-t-0 border-l-0 border-r-0 border-b-[1px] border-[#000000B2] p-1 w-72 min-[375px]:w-[330px] min-[425px]:w-96 focus:outline-none focus:border-gray-500 transition duration-500 ease-in-out text-[#000000B2]"
       />
     </div>
   );
