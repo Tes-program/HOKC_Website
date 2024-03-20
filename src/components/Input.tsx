@@ -21,7 +21,7 @@ const Input: React.FC<InputProps> = ({
   onChange,
 }) => {
   return (
-    <div className="flex flex-col first:my-10">
+    <div className="flex flex-col first:my-10 odd:mt-10">
       {/* <label htmlFor={name}>{label}</label> */}
       <input
         type={type}

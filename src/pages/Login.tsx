@@ -1,11 +1,12 @@
 /* eslint-disable react/no-unescaped-entities */
 /* eslint-disable prettier/prettier */
 import React from 'react';
-import bible from '../assets/bible.png';
+import bible from '../assets/bible2.png';
 import whitelogo from '../assets/white_logo.png';
 import { useState } from 'react';
 import Input from '../components/Input';
 import loginField from '../constant/formField';
+import { Link } from "react-router-dom";
 
 interface Field {
   name: string;
@@ -26,13 +27,13 @@ const Login: React.FC = () => {
   });
   const [form, setForm] = useState(fieldState);
   return (
-    <div className="flex items-center justify-center lg:justify-normal my-12 lg:my-0 lg:flex-row lg:gap-9">
+    <div className="flex justify-center lg:justify-normal my-12  lg:my-0 lg:flex-row">
       <div className=" hidden lg:flex ">
-        <img src={bible} alt="Bible Image" className="w-[467px]" />
+        <img src={bible} alt="Bible Image" className="xl:w-[640px] lg:w-[600px] lg:h-[600px] xl:h-[650px] overflow-hidden" />
       </div>
-      <div className="flex items-center flex-col lg:m-8">
-        <div className="flex flex-col items-center mb-8">
-          <img src={whitelogo} alt="church" className="w-16 lg:w-28" />
+      <div className="flex flex-col xl:mx-32 lg:mx-20 lg:my-8">
+        <div className="flex flex-col mb-8 items-center">
+          <img src={whitelogo} alt="church" className="w-16 lg:w-36" />
           <p className="text-[#434343] lg:text-xl">
             Welcome, Sign in for worship.
           </p>
@@ -59,12 +60,12 @@ const Login: React.FC = () => {
             ))}
             <div className="flex justify-end">
               <div>
-                <a
-                  href="#"
+                <Link
+                  to="/forgot-password"
                   className="text-[#BD1424] text-[14px] font-semibold"
                 >
                   Forgot Password?
-                </a>
+                </Link>
               </div>
             </div>
             <div>
@@ -75,9 +76,9 @@ const Login: React.FC = () => {
             <div className="flex justify-center">
               <p className="text-[#434343]">
                 Don't have an account?{' '}
-                <a href="#" className="text-[#BD1424] font-semibold">
+                <Link to="/signup" className="text-[#BD1424] font-semibold">
                   Sign Up
-                </a>
+                </Link>
               </p>
             </div>
           </form>

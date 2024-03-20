@@ -24,13 +24,13 @@ const signUpField = [
     placeholder: 'Email',
     required: true,
   },
-  {
-    name: 'phone',
-    type: 'text',
-    label: 'Phone Number',
-    placeholder: 'Phone',
-    required: true,
-  },
+  // {
+  //   name: 'phone',
+  //   type: 'text',
+  //   label: 'Phone Number',
+  //   placeholder: 'Phone',
+  //   required: true,
+  // },
   {
     name: 'password',
     type: 'password',
