@@ -78,9 +78,9 @@ const SignUp: React.FC = () => {
             </div>
             <div className="flex justify-center">
               <p className="text-[#434343]">
-                Don't have an account?{' '}
-                <Link to="/signup" className="text-[#BD1424] font-semibold">
-                  Sign Up
+                Already have an account?{' '}
+                <Link to="/login" className="text-[#BD1424] font-semibold">
+                  Sign In
                 </Link>
               </p>
             </div>

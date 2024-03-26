@@ -1,7 +1,7 @@
 import axios from 'axios';
 import { getAccessToken } from './Auth';
 
-const baseUrl = process.env.BACKEND_URL as string;
+const baseUrl = import.meta.env.VITE_BACKEND_URL as string;
 
 const axiosInstance = axios.create({
   baseURL: baseUrl,

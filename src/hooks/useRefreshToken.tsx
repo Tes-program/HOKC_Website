@@ -10,7 +10,7 @@ import {
 } from '../utils/Auth';
 
 export const useRefreshToken = () => {
-  const baseUrl = process.env.BACKEND_URL as string;
+  const baseUrl = import.meta.env.VITE_BACKEND_URL as string;
   const [isRefreshing, setIsRefreshing] = useState(false);
 
   const refreshToken = async () => {

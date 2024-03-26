@@ -15,6 +15,7 @@ import OTP from './pages/Otp';
 import UserInformation from './pages/UserInformation';
 import AuthenticatedLayout from './layout/AuthenticatedLayout';
 import UnauthenticatedLayout from './layout/UnauthenticatedLayout';
+import ProtectedRoute from './routes/protectRoute';
 
 const App: React.FC = () => {
   return (
@@ -30,8 +31,22 @@ const App: React.FC = () => {
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<SignUp />} />
         <Route path="/forgot-password" element={<ForgotPassword />} />
-        <Route path="/qr-scanning" element={<QRScanning />} />
-        <Route path="/profile" element={<Profile />} />
+        <Route
+          path="/qr-scanning"
+          element={
+            <ProtectedRoute>
+              <QRScanning />
+            </ProtectedRoute>
+          }
+        />
+        <Route
+          path="/profile"
+          element={
+            <ProtectedRoute>
+              <Profile />
+            </ProtectedRoute>
+          }
+        />
         <Route path="/otp" element={<OTP />} />
         <Route path="/user-information" element={<UserInformation />} />
       </Route>

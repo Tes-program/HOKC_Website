@@ -1,5 +1,6 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 // contexts/AuthContext.js
-import { createContext, useState, useEffect } from 'react';
+import React, { createContext, useState, useEffect, useMemo } from 'react';
 import axios from 'axios';
 import {
   setAccessToken,
@@ -19,21 +20,24 @@ interface AuthContextValue {
 
 export const AuthContext = createContext<AuthContextValue | null>(null);
 export type AuthContextType = AuthContextValue;
-const baseUrl = process.env.BACKEND_URL;
 
-export const AuthProvider = ({ children }: { children: React.ReactNode }) => {
+const baseUrl = import.meta.env.VITE_BACKEND_URL as string;
+
+interface AuthProviderProps {
+  children: React.ReactNode;
+}
+
+export const AuthProvider: React.FC<AuthProviderProps> = ({ children }) => {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
   const { isRefreshing } = useRefreshToken();
 
   useEffect(() => {
-    const baseUrl = process.env.BACKEND_URL;
     const checkAuthentication = async () => {
       try {
         const accessToken = getAccessToken();
         const refreshToken = getRefreshToken();
 
         if (accessToken && refreshToken) {
-          // Verify the tokens on the server-side
           const response: boolean = await axios.post(
             `${baseUrl}/auth/verify-tokens`,
             {
@@ -42,10 +46,9 @@ export const AuthProvider = ({ children }: { children: React.ReactNode }) => {
             }
           );
 
-          if (response.valueOf() === true) {
+          if (response) {
             setIsAuthenticated(true);
           } else {
-            // Tokens are invalid, log out the user
             logout();
           }
         } else {
@@ -66,7 +69,6 @@ export const AuthProvider = ({ children }: { children: React.ReactNode }) => {
         `${baseUrl}/auth/login`,
         credentials
       );
-
       setAccessToken(response.access.token);
       setRefreshToken(response.refresh.token);
       setIsAuthenticated(true);
@@ -76,13 +78,18 @@ export const AuthProvider = ({ children }: { children: React.ReactNode }) => {
   };
 
   const logout = () => {
-    setAccessToken(' ');
+    setAccessToken('');
     removeRefreshToken();
     setIsAuthenticated(false);
   };
 
+  const authContextValue = useMemo(
+    () => ({ isAuthenticated, login, logout }),
+    [isAuthenticated, login, logout]
+  );
+
   return (
-    <AuthContext.Provider value={{ isAuthenticated, login, logout }}>
+    <AuthContext.Provider value={authContextValue}>
       {children}
     </AuthContext.Provider>
   );
